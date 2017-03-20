@@ -1,0 +1,31 @@
+/*Objective: change the color 
+of screen based on where the mouse is*/
+
+// these variable replace width and height
+  int w=1000;
+  int h=800;
+
+// this sets up the size of drawing
+void settings(){
+  size(w,h);
+}
+
+/* this function will change
+the background color based on 
+where the mouse is */
+
+void draw(){
+  background(#A9E2F0);
+  if (mouseX>w/2)
+  if (mouseY<h/2){
+   background(#F0A9E6);
+  }
+  if (mouseX<w/2)
+  if (mouseY<h/2){
+  background(#D2ADEA);
+  }
+  if (mouseX<w/2)
+  if (mouseY>h/2){
+  background(#C6FFD1);
+  }
+}
